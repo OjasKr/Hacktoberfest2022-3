@@ -1,16 +1,9 @@
-def isPrime(n, i = 2):
-
-	if (n <= 2):
-		return True if(n == 2) else False
-	if (n % i == 0):
-		return False
-	if (i * i > n):
-		return True
-
-	return isPrime(n, i + 1)
-
-n = int(input())
-if (isPrime(n)):
-	print("Yes")
+a=int(input("Enter a Number - "))
+b=0
+for i in range(1,a+1):
+  if(a%i==0):
+    b+=1
+if(b==2):
+  print("The Number is a Prime Number.")
 else:
-	print("No")
+	print("The Number is not a Prime Number.")
